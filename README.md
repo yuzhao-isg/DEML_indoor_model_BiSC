@@ -10,23 +10,13 @@ This repository contains the code for a **deep ensemble machine learning (DEML)*
 
 The framework combines bedroom monitoring data with outdoor meteorological conditions, housing and building characteristics, and occupant behaviours. Its purpose is to estimate indoor environmental exposures across pregnancy using measurements collected during limited monitoring periods.
 
-Temperature and relative humidity analyses are maintained together in this repository. The publicly available code covers **data cleaning and preparation, model development, validation, and the generation of figures and tables**.
+The publicly available code covers **data cleaning and preparation, model development, validation, and the generation of figures and tables**.
 
 > **Data availability:** Study data are not publicly available because of participant privacy and ethical restrictions. Reproducing the original BiSC analyses requires authorised access to the underlying data.
 
 ## Graphical abstract
 
 ![Graphical abstract of the DEML framework for predicting daily mean indoor temperature and relative humidity in BiSC](Graphic_abstract.png)
-
-## Modelling framework
-
-The DEML approach combines predictions from three base learners:
-
-- **Random Forest (RF)**
-- **eXtreme Gradient Boosting (XGBoost)**
-- **Gradient Boosting Machine (GBM)**
-
-The repository includes the main modelling and validation workflows, together with a simplified model that uses fewer predictors. Details of the ensemble architecture, predictor definitions, and validation procedures are provided in the [associated publication](https://doi.org/10.1016/j.buildenv.2026.114392).
 
 ## Repository organisation
 
