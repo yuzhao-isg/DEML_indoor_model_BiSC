@@ -18,22 +18,6 @@ Temperature and relative humidity analyses are maintained together in this repos
 
 ![Graphical abstract of the DEML framework for predicting daily mean indoor temperature and relative humidity in BiSC](Graphic_abstract.png)
 
-## Study data and prediction targets
-
-Indoor temperature and relative humidity were recorded using **loggers placed in participants' bedrooms**, with approximately **one week of monitoring during the first trimester and one week during the third trimester**.
-
-The modelling workflow brings together the following sources of information:
-
-| Data source | Role in the analysis |
-| --- | --- |
-| Bedroom temperature and relative humidity measurements | Observed indoor conditions used for model development and validation |
-| Outdoor meteorological data | Weather conditions used to predict indoor temperature and relative humidity |
-| Housing and building information | Characteristics of the residential indoor environment |
-| Occupant behaviour | Information on ventilation habits, air-conditioning use, and other relevant behaviours |
-| Basic cohort characteristics | Additional characteristics available for exposure modelling |
-
-The prediction targets are **daily mean indoor temperature** and **daily mean indoor relative humidity** for each participant across pregnancy. The monitoring periods provide observations for developing and evaluating the models; indoor conditions on unmonitored days are estimated by the modelling framework.
-
 ## Modelling framework
 
 The DEML approach combines predictions from three base learners:
